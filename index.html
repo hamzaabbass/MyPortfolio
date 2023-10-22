@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Comatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-cale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo">Hamza.</a>
+        <div class="menuToggle" onclick="toggleMenu();"></div>
+        <nav class="navbar">
+            <a href="#" onclick="toggleMenu();" class="active">Home</a>
+            <a href="#" onclick="toggleMenu();">About</a>
+            <a href="#" onclick="toggleMenu();">Services</a>
+            <a href="#" onclick="toggleMenu();">Portfoio</a>
+            <a href="#" onclick="toggleMenu();">Contact</a>
+        </nav>
+    </header>
+
+    <section class="home">
+        <div class="home-content">
+            <h1>Hi, I'm Hamza Abbass</h1>
+            <h3>Front-End Developer</h3>
+            <p>The company itself is a very successful company. Most of all, because the flexibility to assume some escapes from the truth is just to endure, they do not know the pleasure of pleasures nor the great pain of them, for pain finds pleasures?
+                It is said that every one of us deserves to bear the pain of life, and the result of his pain is that we will take away from him the just pleasure. Which, expeditiously.
+            </p>
+            <div class="btn-box">
+                <a href="https://instagram.com/hhamzaabbass?igshid=MzRlODBiNWFlZA==">Hire Me</a>
+                <a href="hamzaabbass@outlook.fr">Let's Talk</a>
+            </div>
+        </div>
+
+        <div class="icon-box">
+            <i>
+                <a href="https://github.com/hamzaabbass" target="_blank" class="fa fa-github wow bounceIn" data-wow-delay="0.6s"></a>
+            </i>
+            <i>
+                <a href="https://www.linkedin.com/in/hamza-abbass" target="_blank" class="fa fa-linkedin wow bounceIn" data-wow-delay="0.3s"></a>
+            </i>
+            <i>
+                <a href="https://instagram.com/hhamzaabbass?igshid=MzRlODBiNWFlZA==" target="_blank" class="fa fa-facebook wow bounceIn" data-wow-delay="0.9s"></a>
+            </i>
+        </div>
+        <span class="home-imgHover"></span>
+    </section>
+
+    <script type="text/javascript">
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            header.classList.toggle("sticky", window.scrollY > 0);
+        });
+
+        function toggleMenu() {
+            const tmenuToggle = document.querySelector('.menuToggle');
+            const navbar = document.querySelector('.navbar');
+            navbar.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+
+        }
+    </script>
+</body>
+
+</html>
