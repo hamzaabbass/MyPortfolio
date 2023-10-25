@@ -292,3 +292,81 @@ body {
         pointer-events: auto;
     }
 }
+
+
+/* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+
+@media (min-width: 320px) and (max-width: 991px) {
+    header,
+    header.sticky {
+        padding: 10px 20px;
+    }
+    header .navbar nav a {
+        text-decoration: none;
+        justify-content: center;
+        align-items: center;
+        color: #ffffff;
+        font-size: 1.6em;
+        font-weight: 300;
+    }
+    .navbar {
+        display: none;
+    }
+    section {
+        padding: 20px;
+    }
+    header .navbar.active {
+        width: 50%;
+        height: calc(100% -68px);
+        position: fixed;
+        top: 68px;
+        left: 50%;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        background: #00abf0;
+        align-items: center;
+    }
+    .menuToggle {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background-image: url(./images/menu.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+        background-size: 30px;
+    }
+    .menuToggle.active {
+        background-image: url(./images/close.png);
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-origin: center;
+    }
+    header.sticky .menuToggle {
+        filter: invert(1);
+    }
+    .home-content h1 {
+        font-size: 25px;
+    }
+    .home-content h3 {
+        font-size: 20px;
+    }
+    .home {
+        background-image: url(images/ME2.jpg);
+        position: absolute;
+        background-size: cover;
+        background-position: center;
+        -webkit-backdrop-filter: blur(2px);
+        backdrop-filter: blur(2px);
+        display: flex;
+        align-items: center;
+    }
+    .home-imgHover:hover {
+        background: none;
+    }
+}
